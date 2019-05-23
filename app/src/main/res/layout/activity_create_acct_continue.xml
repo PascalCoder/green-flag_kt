@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context=".CreateAcctContinueActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8sp"
+            android:layout_marginTop="10sp"
+            android:width="@dimen/acct_next_et_width"
+            android:background="@color/colorWhite"
+            android:ems="20"
+            android:hint="Name"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/et_u_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_name"
+            android:layout_marginStart="8sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="5sp"
+            android:width="@dimen/acct_next_et_width"
+            android:background="@color/colorWhite"
+            android:ems="10"
+            android:hint="Username"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/et_pwd_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_u_name"
+            android:layout_marginStart="8sp"
+            android:layout_marginTop="10sp"
+            android:width="@dimen/acct_next_et_width"
+            android:background="@color/colorWhite"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/btn_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_below="@id/et_pwd_1"
+            android:layout_alignStart="@id/et_name"
+            android:layout_marginStart="0sp"
+            android:layout_marginTop="10dp"
+            android:width="@dimen/acct_next_et_width"
+            android:background="@color/colorLime"
+            android:text="@string/change_photo"/>
+
+        <EditText
+            android:id="@+id/et_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_photo"
+            android:layout_marginStart="8sp"
+            android:layout_marginTop="10sp"
+            android:width="@dimen/acct_next_et_width"
+            android:background="@color/colorWhite"
+            android:ems="10"
+            android:hint="@string/age"
+            android:inputType="number"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/btn_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_age"
+            android:layout_alignStart="@id/et_age"
+            android:layout_marginTop="10sp"
+            android:width="100sp"
+            android:background="@color/colorWhite"
+            android:ems="10"
+            android:minWidth="200sp"
+            android:padding="10sp"
+            android:text="Choose Birth Date"
+            android:textSize="17sp"/>
+
+        <Spinner
+            android:id="@+id/spn_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_dob"
+            android:layout_alignStart="@id/btn_dob"
+            android:layout_marginTop="10sp"
+            android:background="@color/colorWhite"
+            android:dropDownWidth="320dp"
+            android:minWidth="230sp"
+            android:paddingStart="20sp"
+            android:paddingEnd="50sp"
+            android:prompt="@string/spinner_country_title">
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/tv_gender_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spn_country"
+            android:layout_alignStart="@id/btn_dob"
+            android:layout_marginTop="10sp"
+            android:labelFor="@+id/rg_gender"
+            android:text="Gender"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"/>
+
+        <RadioGroup
+            android:id="@+id/rg_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_gender_label"
+            android:layout_alignStart="@+id/tv_gender_label"
+            android:layout_marginTop="5sp"
+            android:outlineSpotShadowColor="@color/colorWhite">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:buttonTint="@color/colorWhite"
+                android:checked="false"
+                android:text="Male"
+                android:textColor="@color/colorWhite"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:buttonTint="@color/colorWhite"
+                android:checked="false"
+                android:text="Female"
+                android:textColor="@color/colorWhite"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/et_postal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rg_gender"
+            android:layout_alignStart="@id/rg_gender"
+            android:layout_marginTop="10sp"
+            android:width="@dimen/acct_next_et_width"
+            android:background="@color/colorWhite"
+            android:hint="@string/postal_address_opt"
+            android:inputType="textPostalAddress"
+            android:padding="10sp"/>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_below="@+id/rg_gender"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="12sp"
+            android:layout_toEndOf="@+id/et_postal"
+            android:width="100sp"
+            android:background="@color/colorLime"
+            android:padding="10sp"
+            android:text="Save"/>
+
+        <ImageView
+            android:id="@+id/ic_photo"
+            android:layout_width="130dp"
+            android:layout_height="183dp"
+            android:layout_alignEnd="@id/et_name"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="-4dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="10sp"
+            android:contentDescription="@string/ic_photo_desc"
+            android:src="@drawable/ic_android_lime_240dp"/>
+    </RelativeLayout>
+</ScrollView>

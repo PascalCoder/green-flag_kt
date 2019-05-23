@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="opt_text_size">18dp</dimen>
+    <dimen name="ft_description">24sp</dimen>
+    <dimen name="opt_margin_start">8dp</dimen>
+    <dimen name="et_width">320dp</dimen>
+    <dimen name="margin_bottom_input_text">15dp</dimen>
+    <dimen name="margin_top_input_text">5dp</dimen>
+    <dimen name="txt_size_label">18sp</dimen>
+    <dimen name="acct_next_et_width">230sp</dimen>
+</resources>

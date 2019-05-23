@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">GreenFlag</string>
+
+    <string name="description">
+        GreenFlag customers can create an account to access
+    </string>
+    <string name="opt_1">Car health updates</string>
+    <string name="opt_2">Request a rescue online</string>
+    <string name="opt_3">Policy information</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="email_address_label">Email address</string>
+    <string name="repeat_password_label">Repeat password</string>
+    <string name="create_password_label">Create password</string>
+    <string name="pwd_criteria">
+        Your password should have a minimum of 8 characters and
+        contain at least one number, one uppercase and one
+        lowercase letter. You can use special characters.
+    </string>
+    <string name="next">Next</string>
+    <string name="criteria_hint">See criteria below</string>
+    <string name="invalid_pwd_msg">One of the password you entered wasn\'t valid</string>
+    <string name="not_equal_pwd_msg">Your passwords don\'t match</string>
+    <string name="age">Age</string>
+    <string name="change_photo">Change Photo</string>
+    <string name="password">Password</string>
+    <string name="choose_birth_date">CHOOSE BIRTH DATE</string>
+    <string name="ic_photo_desc">ic_photo_desc</string>
+    <string name="postal_address_opt">Postal Address (Opt)</string>
+    <string name="spinner_country_title">Choose a Country</string>
+    <string name="back_to_home_page">Back to Home page</string>
+
+    <string-array name="countries">
+        <item>Not-Specified</item>
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
+</resources>
